@@ -1,0 +1,6 @@
+
+window[window["TiktokAnalyticsObject"]].instance("C6FM9IQO6DGUDE09U2R0").setAdvancedMatchingAvailableProperties({"email":false,"phone_number":false,"auto_email":false,"auto_phone_number":false});
+window[window["TiktokAnalyticsObject"]].instance("C6FM9IQO6DGUDE09U2R0").setPixelInfo && window[window["TiktokAnalyticsObject"]].instance("C6FM9IQO6DGUDE09U2R0").setPixelInfo({status: 0, name: "Ilusio Conversion ", advertiserID: "7034044532190740482", setupMode: 1, partner: "None", is_onsite: false });
+window[window["TiktokAnalyticsObject"]].setPCMDomain && window[window["TiktokAnalyticsObject"]].setPCMDomain("ticketsmarche.com");
+window[window["TiktokAnalyticsObject"]].setPCMConfig && window[window["TiktokAnalyticsObject"]].setPCMConfig([]);
+window[window["TiktokAnalyticsObject"]].enableFirstPartyCookie && window[window["TiktokAnalyticsObject"]].enableFirstPartyCookie(true);

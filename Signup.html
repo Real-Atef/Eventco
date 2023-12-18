@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+    <header>
+        <img class ="logo" src="images/lohoooo.png" alt="logo">
+     <nav>
+         <ul class="links">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="Reservation.html">Reserve your Tickte</a></li>
+             <li><a href="contact us.html ">Contact Us</a></li>
+             <li><a href="Signin.html">Signin</a></li>
+            <li><a href="Signup.html">Signup</a></li> 
+         </ul>
+     </nav>
+     </header>
+     <section>
+        <form id="myform"  >
+            <div class="Signup">
+              <h1>Please fill this for your account</h1>
+              <label for="email"><b>Email </b></label>
+              <input type="text" id="email"  placeholder="Mohamed200276.mk@icloud.com" name="email" required/>
+              <label for="Phone Number"><b>Phone number</b></label>
+              <input type="text" id="phone" placeholder="01277648593" name="Phone number" required/>
+              <label for="Country"><b>Country</b></label>
+              <select id="country" name="country">
+                <option value="Egypt">Egypt</option>
+                <option value="masr">Masr</option>
+                <option value="City">Future City</option>
+              </select>
+              <label for="address"><b>Address</b></label>
+              <input type="text" id="address" placeholder="Future City" name="address" required/>
+              <label for="psw"><b>Password</b></label>
+              <input type="password" id="pass" placeholder="********" name="psw" required/>
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" id="pass" placeholder="********" name="psw-repeat" required/>
+              <button type="button" class="cancelbtn">Cancel</button>
+              <button type="submit" class="signupbtn">Resgiter</button>
+            
+            </div>
+          </form>
+     </section>
+</body>
+<script src="main.js"></script>
+
+</html>

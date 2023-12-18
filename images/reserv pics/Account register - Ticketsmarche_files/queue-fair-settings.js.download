@@ -1,0 +1,108 @@
+window.queueFair.settings={
+    "queues": [
+        {
+            "displayName": "Clappit",
+            "name": "clappit",
+            "mode": "Queue",
+            "queueServer": "clappit.queue-fair.net",
+            "adapterServer": "clappit.queue-fair.net",
+            "passedLifetimeMinutes": "20",
+            "dynamicTarget": "full",
+            "activation": {
+                "rules": [
+                    {
+                        "component": "Domain",
+                        "match": "Contain",
+                        "value": "www.clappit.com",
+                        "caseSensitive": false,
+                        "negate": false
+                    },
+                    {
+                        "operator": "And",
+                        "component": "Path",
+                        "match": "Contain",
+                        "value": "ultimo",
+                        "caseSensitive": false,
+                        "negate": false
+                    }
+                ]
+            }
+        },
+        {
+            "displayName": "Vivoconcerti",
+            "name": "vivoconcerti",
+            "mode": "Queue",
+            "queueServer": "clappit.queue-fair.net",
+            "adapterServer": "clappit.queue-fair.net",
+            "passedLifetimeMinutes": "60",
+            "dynamicTarget": "full",
+            "activation": {
+                "rules": [
+                    {
+                        "component": "Path",
+                        "match": "Contain",
+                        "value": "\/biglietteria-vivo-concerti\/",
+                        "caseSensitive": false,
+                        "negate": false
+                    },
+                    {
+                        "operator": "And",
+                        "component": "Path",
+                        "match": "Contain",
+                        "value": "ultimo",
+                        "caseSensitive": false,
+                        "negate": false
+                    }
+                ]
+            }
+        },
+        {
+            "displayName": "Festivaletteratura",
+            "name": "festivaletteratura",
+            "mode": "Queue",
+            "queueServer": "clappit.queue-fair.net",
+            "adapterServer": "clappit.queue-fair.net",
+            "passedLifetimeMinutes": "60",
+            "dynamicTarget": "full",
+            "activation": {
+                "rules": [
+                    {
+                        "component": "Path",
+                        "match": "Contain",
+                        "value": "\/biglietteria-festivaletteratura\/showProductList.html",
+                        "caseSensitive": false,
+                        "negate": false
+                    }
+                ]
+            }
+        },
+        {
+            "displayName": "Ticketsmarche",
+            "name": "ticketsmarche",
+            "mode": "Queue",
+            "queueServer": "clappit.queue-fair.net",
+            "adapterServer": "clappit.queue-fair.net",
+            "passedLifetimeMinutes": "60",
+            "dynamicTarget": "full",
+            "activation": {
+                "rules": [
+                    {
+                        "component": "Path",
+                        "match": "Contain",
+                        "value": "\/tickets\/buy-tickets-maroon-5-live-at-the-pyramids.html",
+                        "caseSensitive": false,
+                        "negate": false
+                    },
+                    {
+                        "operator": "Or",
+                        "component": "Path",
+                        "match": "Contain",
+                        "value": "\/tickets\/buy-tickets-maroon-5-live-at-the-pyramids-ar.html",
+                        "caseSensitive": false,
+                        "negate": false
+                    }
+                ]
+            }
+        }
+    ]
+};window.queueFair.gotSettings();
